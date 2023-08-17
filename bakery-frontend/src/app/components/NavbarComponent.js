@@ -27,20 +27,20 @@ export default function NavBar(args) {
             <NavbarToggler onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
             <Nav className="ms-auto" navbar>
-                <NavItem>
+                <NavItem className="mx-3">
                     <NavLink href="">Home</NavLink>
                 </NavItem>
-                <NavItem>
+                <NavItem className="mx-3">
                     <NavLink href="">
                         Order
                     </NavLink>
                 </NavItem>
-                <NavItem>
+                <NavItem className="mx-3">
                     <NavLink href="">
                         Login
                     </NavLink>
                 </NavItem>
-                <NavItem>
+                <NavItem className="mx-3">
                     <NavLink href="">
                         Cart
                     </NavLink>
