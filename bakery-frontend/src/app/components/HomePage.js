@@ -16,26 +16,24 @@ export default function HomePage(){
                 </div>
             </div>
             <Container fluid>
-                <Row style={{marginTop: '24px', marginBottom: '24px'}}>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px'}}>
                     <Col sm={{size: 12}} md={{size: 4}}>
-                        <div >
-                            <Row>
-                                <Col>
-                                    <h2 className={styles.mainText}>
-                                        <span className={styles.subText}>
-                                            IN THE &nbsp;&nbsp;
-                                        </span>
-                                        KITCHEN
-                                    </h2>
-                                </Col>
-                            </Row>
-                        </div>
+                        <Row>
+                            <Col>
+                                <h2 className={styles.mainText} style={{textAlign: 'end'}}>
+                                    <span className={styles.subText}>
+                                        IN THE &nbsp;&nbsp;
+                                    </span>
+                                    KITCHEN
+                                </h2>
+                            </Col>
+                        </Row>
                     </Col>
                     <Col className='d-none d-md-block' md="8" style={{marginTop: 'auto !important', marginBottom: 'auto !important'}}>
                         <hr className={styles.horizontalLine}/>
                     </Col>
                 </Row>
-                <Row style={{marginTop: '24px', marginBottom: '24px'}}>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px'}}>
                     <Col xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center' }}>
                             <Card style={{width: '15rem',marginTop: '5%'}}>
                                 <img
@@ -69,7 +67,7 @@ export default function HomePage(){
                         </Card>
                     </Col>
                 </Row>
-                <Row style={{marginTop: '24px', marginBottom: '24px'}}>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px'}}>
                     <Col className='d-none d-md-block' md="8" style={{marginTop: 'auto !important', marginBottom: 'auto !important'}}>
                         <hr className={styles.horizontalLine}/>
                     </Col>
@@ -86,7 +84,7 @@ export default function HomePage(){
                         </Row>
                     </Col>
                 </Row>
-                <Row style={{marginTop: '24px', marginBottom: '24px'}}>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px'}}>
                     <Col xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center' }}>
                         <Card style={{width: '15rem',marginTop: '5%'}}>
                             <img

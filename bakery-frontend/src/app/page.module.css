@@ -1,11 +1,7 @@
-.customcontainer{
-  background-color: var(--pastel-shade);
-}
-
 /* NavBar */
 
 .navBar{
-  background-color: var(--pastel-shade-1);
+  background-color: var(--pastel-shade-2);
 }
 
 /* Home */
