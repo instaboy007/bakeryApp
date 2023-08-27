@@ -1,3 +1,64 @@
 .customcontainer{
-  background-color: #F0E8D0;
+  background-color: var(--pastel-shade);
+}
+
+/* NavBar */
+
+.navBar{
+  background-color: var(--pastel-shade-1);
+}
+
+/* Home */
+
+.heroContainer{
+  width: 100%;
+  position: relative;/* Ensure relative positioning for the container */
+}
+
+.heroBanner {
+  background-color: transparent; /* No background color for the jumbotron */
+  padding: 0; /* Remove any padding to maximize the image */
+}
+
+.heroImage {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.8)),url('/home/hero-banner.png');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden; /* Ensure the gradient covers the entire image */
+  display: flex; /* Use Flexbox to center content */
+  align-items: center;
+}
+
+.heroText{
+  margin-left: 5%;
+  color: var(--pure-white);
+}
+
+.customButtonPrimary{
+  background-color: var(--pastel-shade-2) !important;
+  color: var(--choco-color-dark) !important;
+  font-weight: 600 !important;
+}
+
+.horizontalLine{
+  height: 3px !important;
+  border-width: 3px !important;
+  opacity: 1;
+}
+
+.subText{
+  font-size: 1.5rem;
+  display: absolute;
+  bottom: 0;
+}
+
+.mainText{
+  font-size: 3rem;
+}
+
+.subText, .mainText, .horizontalLine{
+  color: var(--choco-color-dark);
 }
