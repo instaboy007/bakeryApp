@@ -20,9 +20,9 @@ export default function HomePage(){
                     <Col sm={{size: 12}} md={{size: 4}}>
                         <Row>
                             <Col>
-                                <h2 className={styles.mainText} style={{textAlign: 'end'}}>
+                                <h2 className={styles.mainText} style={{textAlign: 'end', display: 'flex', alignItems: 'center'}}>
                                     <span className={styles.subText}>
-                                        IN THE &nbsp;&nbsp;
+                                        IN MY &nbsp;&nbsp;
                                     </span>
                                     KITCHEN
                                 </h2>
@@ -33,38 +33,97 @@ export default function HomePage(){
                         <hr className={styles.horizontalLine}/>
                     </Col>
                 </Row>
-                <Row style={{paddingTop: '24px', paddingBottom: '24px'}}>
-                    <Col xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center' }}>
-                            <Card style={{width: '15rem',marginTop: '5%'}}>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px', display: 'flex', justifyContent: 'center'}}>
+                    <Col xs='auto' sm='auto' md='auto' lg='1' style={{paddingTop: '24px', paddingBottom: '24px' }}>
+                        <div style={{display: 'flex', justifyContent: 'center' }}>
+                            <Card className={styles.customKitchenCard} style={{width: '5rem',height: '5rem',marginTop: '5%', padding: '5%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                                 <img
-                                    alt="Card"
-                                    src="https://picsum.photos/300/200"
+                                    alt="Bread"
+                                    src="./home/icons8-bread-64.png"
+                                    height="52px"
+                                    width="52px"
                                 />
                             </Card>
+                        </div>
+                        <h2 className={styles.kitchenCardLabel}>Breads</h2>
                     </Col>
-                    <Col  xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center'}}>
-                        <Card style={{width: '15rem',marginTop: '5%'}}>
-                            <img
-                                alt="Card"
-                                src="https://picsum.photos/300/200"
-                            />
-                        </Card>
+                    <Col xs='auto' sm='auto' md='auto' lg='1' style={{paddingTop: '24px', paddingBottom: '24px'}}>
+                        <div style={{display: 'flex', justifyContent: 'center' }}>
+                            <Card className={styles.customKitchenCard} style={{width: '5rem',height: '5rem',marginTop: '5%', padding: '5%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                                <img
+                                    alt="Bread"
+                                    src="./home/icons8-cake-100.png"
+                                    height="52px"
+                                    width="52px"
+                                />
+                            </Card>
+                        </div>
+                        <h2 className={styles.kitchenCardLabel}>Pastries</h2>
                     </Col>
-                    <Col xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center'}}>
-                        <Card style={{width: '15rem',marginTop: '5%'}}>
-                            <img
-                                alt="Card"
-                                src="https://picsum.photos/300/200"
-                            />
-                        </Card>
+                    <Col xs='auto' sm='auto' md='auto' lg='1' style={{paddingTop: '24px', paddingBottom: '24px' }}>
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <Card className={styles.customKitchenCard} style={{width: '5rem',height: '5rem',marginTop: '5%', padding: '5%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                                <img
+                                    alt="Bread"
+                                    src="./home/icons8-cake-66.png"
+                                    height="52px"
+                                    width="52px"
+                                />
+                            </Card>
+                        </div>
+                        <h2 className={styles.kitchenCardLabel}>Cakes</h2>
                     </Col>
-                    <Col xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center'}}>
-                        <Card style={{width: '15rem',marginTop: '5%'}}>
-                            <img
-                                alt="Card"
-                                src="https://picsum.photos/300/200"
-                            />
-                        </Card>
+                    <Col xs='auto' sm='auto' md='auto' lg='1' style={{paddingTop: '24px', paddingBottom: '24px'}}>
+                        <div style={{display: 'flex', justifyContent: 'center' }}>
+                            <Card className={styles.customKitchenCard} style={{width: '5rem',height: '5rem',marginTop: '5%', padding: '5%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                                <img
+                                    alt="Bread"
+                                    src="./home/icons8-cupcake-64.png"
+                                    height="52px"
+                                    width="52px"
+                                />
+                            </Card>
+                        </div>
+                        <h2 className={styles.kitchenCardLabel}>Cupcakes</h2>
+                    </Col>
+                    <Col xs='auto' sm='auto' md='auto' lg='1' style={{paddingTop: '24px', paddingBottom: '24px'}}>
+                        <div style={{display: 'flex', justifyContent: 'center' }}>
+                            <Card className={styles.customKitchenCard} style={{width: '5rem',height: '5rem',marginTop: '5%', padding: '5%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                                <img
+                                    alt="Bread"
+                                    src="./home/icons8-cookie-64.png"
+                                    height="52px"
+                                    width="52px"
+                                />
+                            </Card>
+                        </div>
+                        <h2 className={styles.kitchenCardLabel}>Cookies</h2>
+                    </Col>
+                    <Col xs='auto' sm='auto' md='auto' lg='1' style={{paddingTop: '24px', paddingBottom: '24px'}}>
+                        <div style={{display: 'flex', justifyContent: 'center' }}>
+                            <Card className={styles.customKitchenCard} style={{width: '5rem',height: '5rem',marginTop: '5%', padding: '5%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                                <img
+                                    alt="Bread"
+                                    src="./home/icons8-chocolate-100.png"
+                                    height="52px"
+                                    width="52px"
+                                />
+                            </Card>
+                        </div>
+                        <h2 className={styles.kitchenCardLabel}>Chocolates</h2>
+                    </Col>
+                    <Col xs='auto' sm='auto' md='auto' lg='1' style={{paddingTop: '24px', paddingBottom: '24px'}}>
+                        <div style={{display: 'flex', justifyContent: 'center' }}>
+                            <Card className={styles.customKitchenCard} style={{width: '5rem',height: '5rem',marginTop: '5%', padding: '5%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                                <img
+                                    alt="Bread"
+                                    src="./home/icons8-doughnut-100.png"
+                                    height="52px"
+                                    width="52px"
+                                />
+                            </Card>
+                        </div>
+                        <h2 className={styles.kitchenCardLabel}>Doughnuts</h2>
                     </Col>
                 </Row>
                 <Row style={{paddingTop: '24px', paddingBottom: '24px'}}>
@@ -74,7 +133,7 @@ export default function HomePage(){
                     <Col sm={{size: 12}} md={{size: 4}}>
                         <Row>
                             <Col>
-                                <h2 className={styles.mainText}>
+                                <h2 className={styles.mainText} style={{display: 'flex', alignItems: 'center'}}>
                                     <span className={styles.subText}>
                                         IN &nbsp;&nbsp;
                                     </span>
@@ -84,70 +143,96 @@ export default function HomePage(){
                         </Row>
                     </Col>
                 </Row>
-                <Row style={{paddingTop: '24px', paddingBottom: '24px'}}>
-                    <Col xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center' }}>
-                        <Card style={{width: '15rem',marginTop: '5%'}}>
-                            <img
-                                alt="Card"
-                                src="https://picsum.photos/300/200"
-                            />
-                            <CardBody>
-                                <CardTitle tag="h5">
-                                Card Title
-                                </CardTitle>
-                                <CardText>
-                                This is some text within a card body.
-                                </CardText>
-                            </CardBody>
-                        </Card>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px', justifyContent: 'center'}}>
+                    <Col xs='auto' sm='auto' md='auto' lg='auto' >
+                        <div style={{display: 'flex', justifyContent: 'center' }}>
+                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                                <img
+                                    alt="Card"
+                                    src="https://picsum.photos/300/200"
+                                />
+                                <CardBody>
+                                    <CardTitle tag="h5">
+                                    Card Title
+                                    </CardTitle>
+                                    <CardText>
+                                    This is some text within a card body.
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </div>
                     </Col>
-                    <Col  xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center'}}>
-                        <Card style={{width: '15rem',marginTop: '5%'}}>
-                            <img
-                                alt="Card"
-                                src="https://picsum.photos/300/200"
-                            />
-                            <CardBody>
-                                <CardTitle tag="h5">
-                                Card Title
-                                </CardTitle>
-                                <CardText>
-                                This is some text within a card body.
-                                </CardText>
-                            </CardBody>
-                        </Card>
+                    <Col xs='auto' sm='auto' md='auto' lg='auto'>
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                                <img
+                                    alt="Card"
+                                    src="https://picsum.photos/300/200"
+                                />
+                                <CardBody>
+                                    <CardTitle tag="h5">
+                                    Card Title
+                                    </CardTitle>
+                                    <CardText>
+                                    This is some text within a card body.
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </div>
                     </Col>
-                    <Col xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center'}}>
-                        <Card style={{width: '15rem',marginTop: '5%'}}>
-                            <img
-                                alt="Card"
-                                src="https://picsum.photos/300/200"
-                            />
-                            <CardBody>
-                                <CardTitle tag="h5">
-                                Card Title
-                                </CardTitle>
-                                <CardText>
-                                This is some text within a card body.
-                                </CardText>
-                            </CardBody>
-                        </Card>
+                    <Col xs='auto' sm='auto' md='auto' lg='auto' >
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                                <img
+                                    alt="Card"
+                                    src="https://picsum.photos/300/200"
+                                />
+                                <CardBody>
+                                    <CardTitle tag="h5">
+                                    Card Title
+                                    </CardTitle>
+                                    <CardText>
+                                    This is some text within a card body.
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </div>
                     </Col>
-                    <Col xs='6' sm='6' md='4' lg='3' style={{display: 'flex', justifyContent: 'center'}}>
-                        <Card style={{width: '15rem',marginTop: '5%'}}>
-                            <img
-                                alt="Card"
-                                src="https://picsum.photos/300/200"
-                            />
-                            <CardBody>
-                                <CardTitle tag="h5">
-                                Card Title
-                                </CardTitle>
-                                <CardText>
-                                This is some text within a card body.
-                                </CardText>
-                            </CardBody>
-                        </Card>
+                    <Col xs='auto' sm='auto' md='auto' lg='auto'>
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                                <img
+                                    alt="Card"
+                                    src="https://picsum.photos/300/200"
+                                />
+                                <CardBody>
+                                    <CardTitle tag="h5">
+                                    Card Title
+                                    </CardTitle>
+                                    <CardText>
+                                    This is some text within a card body.
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </Col>
+                    <Col xs='auto' sm='auto' md='auto' lg='auto'>
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                                <img
+                                    alt="Card"
+                                    src="https://picsum.photos/300/200"
+                                />
+                                <CardBody>
+                                    <CardTitle tag="h5">
+                                    Card Title
+                                    </CardTitle>
+                                    <CardText>
+                                    This is some text within a card body.
+                                    </CardText>
+                                </CardBody>
+                            </Card>
+                        </div>
                     </Col>
                 </Row>
             </Container>

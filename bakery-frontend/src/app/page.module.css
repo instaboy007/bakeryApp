@@ -58,3 +58,15 @@
 .subText, .mainText, .horizontalLine{
   color: var(--choco-color-dark);
 }
+
+.customKitchenCard{
+  background-color: var(--pastel-shade-1) !important;
+}
+
+.kitchenCardLabel{
+  color: var(--choco-color-dark);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 5px;
+  text-align: center;
+}
