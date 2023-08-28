@@ -22,9 +22,9 @@ export default function HomePage(){
                             <Col>
                                 <h2 className={styles.mainText} style={{textAlign: 'end', display: 'flex', alignItems: 'center'}}>
                                     <span className={styles.subText}>
-                                        IN MY &nbsp;&nbsp;
+                                        In my &nbsp;
                                     </span>
-                                    KITCHEN
+                                    Kitchen
                                 </h2>
                             </Col>
                         </Row>
@@ -135,9 +135,9 @@ export default function HomePage(){
                             <Col>
                                 <h2 className={styles.mainText} style={{display: 'flex', alignItems: 'center'}}>
                                     <span className={styles.subText}>
-                                        IN &nbsp;&nbsp;
+                                        In &nbsp;
                                     </span>
-                                    SEASON
+                                    Season
                                 </h2>
                             </Col>
                         </Row>
@@ -145,94 +145,99 @@ export default function HomePage(){
                 </Row>
                 <Row style={{paddingTop: '24px', paddingBottom: '24px', justifyContent: 'center'}}>
                     <Col xs='auto' sm='auto' md='auto' lg='auto' >
-                        <div style={{display: 'flex', justifyContent: 'center' }}>
-                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important' }}>
+                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
                                 <img
                                     alt="Card"
-                                    src="https://picsum.photos/300/200"
+                                    src="home/chocolateFudgeCake.png"
                                 />
                                 <CardBody>
-                                    <CardTitle tag="h5">
-                                    Card Title
+                                    <CardTitle className={styles.seasonDishName} tag="h5">
+                                    Chocolate Fudge Cake
                                     </CardTitle>
-                                    <CardText>
-                                    This is some text within a card body.
+                                    <CardText className={styles.seasonDishDescription}>
+                                    Rich layers, velvety fudge, pure bliss.
                                     </CardText>
                                 </CardBody>
                             </Card>
                         </div>
                     </Col>
                     <Col xs='auto' sm='auto' md='auto' lg='auto'>
-                        <div style={{display: 'flex', justifyContent: 'center'}}>
-                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
+                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
                                 <img
                                     alt="Card"
-                                    src="https://picsum.photos/300/200"
+                                    src="home/croissantDelight.png"
                                 />
                                 <CardBody>
-                                    <CardTitle tag="h5">
-                                    Card Title
+                                    <CardTitle className={styles.seasonDishName} tag="h5">
+                                    Croissant Delight
                                     </CardTitle>
-                                    <CardText>
-                                    This is some text within a card body.
+                                    <CardText className={styles.seasonDishDescription}>
+                                    Flaky perfection, buttery delight.
                                     </CardText>
                                 </CardBody>
                             </Card>
                         </div>
                     </Col>
                     <Col xs='auto' sm='auto' md='auto' lg='auto' >
-                        <div style={{display: 'flex', justifyContent: 'center'}}>
-                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
+                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
                                 <img
                                     alt="Card"
-                                    src="https://picsum.photos/300/200"
+                                    src="home/berryBlissCupcake.png"
                                 />
                                 <CardBody>
-                                    <CardTitle tag="h5">
-                                    Card Title
+                                    <CardTitle className={styles.seasonDishName} tag="h5">
+                                    Berry Bliss Cupcake
                                     </CardTitle>
-                                    <CardText>
-                                    This is some text within a card body.
+                                    <CardText className={styles.seasonDishDescription}>
+                                    Bursting berries, heavenly sweetness.
                                     </CardText>
                                 </CardBody>
                             </Card>
                         </div>
                     </Col>
                     <Col xs='auto' sm='auto' md='auto' lg='auto'>
-                        <div style={{display: 'flex', justifyContent: 'center'}}>
-                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
+                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
                                 <img
                                     alt="Card"
-                                    src="https://picsum.photos/300/200"
+                                    src="home/artisanBaguette.png"
                                 />
                                 <CardBody>
-                                    <CardTitle tag="h5">
-                                    Card Title
+                                    <CardTitle className={styles.seasonDishName} tag="h5">
+                                    Artisan Baguette
                                     </CardTitle>
-                                    <CardText>
-                                    This is some text within a card body.
+                                    <CardText className={styles.seasonDishDescription}>
+                                    Golden crust, soft interior, perfection.
                                     </CardText>
                                 </CardBody>
                             </Card>
                         </div>
                     </Col>
                     <Col xs='auto' sm='auto' md='auto' lg='auto'>
-                        <div style={{display: 'flex', justifyContent: 'center'}}>
-                            <Card style={{width: '12rem',marginTop: '5%'}}>
+                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
+                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
                                 <img
                                     alt="Card"
-                                    src="https://picsum.photos/300/200"
+                                    src="home/lemonZestMacaron.png"
                                 />
                                 <CardBody>
-                                    <CardTitle tag="h5">
-                                    Card Title
+                                    <CardTitle className={styles.seasonDishName} tag="h5">
+                                    Lemon Zest Macaron
                                     </CardTitle>
-                                    <CardText>
-                                    This is some text within a card body.
+                                    <CardText className={styles.seasonDishDescription}>
+                                    Zesty elegance, Parisian delight.
                                     </CardText>
                                 </CardBody>
                             </Card>
                         </div>
+                    </Col>
+                </Row>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px', justifyContent: 'center'}}>
+                    <Col>
+                        <h1 style={{textAlign: 'center'}}>About</h1>
                     </Col>
                 </Row>
             </Container>
