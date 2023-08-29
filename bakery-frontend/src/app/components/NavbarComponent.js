@@ -15,6 +15,8 @@ import {
   DropdownItem,
   NavbarText,
 } from 'reactstrap';
+import {FaShoppingCart} from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function NavBar(args) {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,22 +31,22 @@ export default function NavBar(args) {
                 <Collapse isOpen={isOpen} navbar>
                 <Nav className="ms-auto" navbar>
                     <NavItem className="mx-3">
-                        <NavLink href="">Home</NavLink>
+                        <Link className={styles.navLink} href="/home">Home</Link>
                     </NavItem>
                     <NavItem className="mx-3">
-                        <NavLink href="">
+                        <Link className={styles.navLink} href="/menu">
                             Menu
-                        </NavLink>
+                        </Link>
                     </NavItem>
                     <NavItem className="mx-3">
-                        <NavLink href="">
-                            Cart
-                        </NavLink>
+                        <Link className={styles.navLink} href="/cart">
+                            <FaShoppingCart />
+                        </Link>
                     </NavItem>
                     <NavItem className="mx-3">
-                        <NavLink href="">
+                        <Link className={styles.navLink} href="/login">
                             Login
-                        </NavLink>
+                        </Link>
                     </NavItem>
                 </Nav>
                 </Collapse>

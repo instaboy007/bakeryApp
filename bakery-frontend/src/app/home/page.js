@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from 'react';
 import {Container, Row, Col, Button,  Card, CardBody, CardTitle, CardText } from 'reactstrap';
-import styles from '../page.module.css';
+import styles from '../page.module.css'
 import Image from 'next/image';
 
-export default function HomePage(){
+export default function Home(){
     return (
         <>
             <div className={styles.heroContainer}>
@@ -21,7 +21,7 @@ export default function HomePage(){
                     <Col sm={{size: 12}} md={{size: 4}}>
                         <Row>
                             <Col>
-                                <h2 className={styles.mainText} style={{textAlign: 'end', display: 'flex', alignItems: 'center'}}>
+                                <h2 className={styles.mainText} style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-end'}}>
                                     <span className={styles.subText}>
                                         In my &nbsp;
                                     </span>
@@ -34,7 +34,7 @@ export default function HomePage(){
                         <hr className={styles.horizontalLine}/>
                     </Col>
                 </Row>
-                <Row style={{paddingTop: '24px', paddingBottom: '24px', display: 'flex', justifyContent: 'center'}}>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px', justifyContent: 'center'}}>
                     <Col xs='auto' sm='auto' md='auto' lg='1' style={{paddingTop: '24px', paddingBottom: '24px' }}>
                         <div style={{display: 'flex', justifyContent: 'center' }}>
                             <Card className={styles.customKitchenCard} style={{width: '5rem',height: '5rem',marginTop: '5%', padding: '5%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -291,7 +291,5 @@ export default function HomePage(){
                 </Row>
             </Container>
         </>
-        
-           
     )
 }

@@ -4,6 +4,11 @@
   background-color: var(--pastel-shade-2);
 }
 
+.navLink{
+  text-decoration: none;
+  color: var(--choco-color-dark) !important;
+}
+
 /* Home */
 
 .heroContainer{
@@ -39,6 +44,22 @@
   font-weight: 600 !important;
   border: 2px var(--choco-color-dark) !important;
 }
+
+.customButtonSecondary{
+  background-color: var(--pure-white) !important;
+  border: 2px var(--choco-color-dark) !important;
+  color: var(--choco-color-dark) !important;
+  font-weight: 600 !important;
+  border: 2px var(--choco-color-dark) !important;
+}
+
+.customButtonSecondary :hover{
+  background-color: var(--choco-color-dark) !important;
+  color: var(--pastel-shade) !important;
+  font-weight: 600 !important;
+  border: 2px var(--choco-color-dark) !important;
+}
+
 
 .horizontalLine{
   height: 3px !important;
@@ -90,7 +111,6 @@
 
 .aboutInteriorImage{
   position: relative;
-  width: 100%;
   height: auto;
   min-height: 300px;
   background-image: url('/home/bakeryInterior.png');
@@ -115,7 +135,6 @@
 
 .aboutOwnerImage{
   position: relative;
-  width: 100%;
   height: auto;
   min-height: 300px;
   background-image: url('/home/owner.png');
@@ -132,4 +151,58 @@
 .socialIcons a{
   font-size: 1.5rem;
   color: var(--pastel-shade) !important;
+}
+
+.menuContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+}
+
+/* Ensure the row expands to fill the available space */
+.menuRow {
+  flex: 1;
+}
+
+.ourMenuText{
+  color: var(--choco-color-dark);
+  font-size: 2rem;
+  font-weight:700;
+  text-align: center;
+}
+
+.categoryName{
+  font-size: 1rem;
+  color: var(--choco-color-dark);
+}
+
+.vegIcon {
+  color: green;
+  margin-right: 5px;
+}
+
+.nonVegIcon {
+  color: red;
+  margin-right: 5px;
+}
+
+.dot{
+  background-color: var(--choco-color-dark);
+  height: 5px;
+  width: 5px;
+  display: inline-block;
+  border-radius: 30px;
+  vertical-align: middle;
+}
+
+.itemPrice{
+  font-size: 1.2rem;
+  color: var(--choco-color-dark);
+  font-weight: 600;
+}
+
+.itemDescription{
+  font-size: 0.8rem;
+
 }
