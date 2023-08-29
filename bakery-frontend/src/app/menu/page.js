@@ -404,12 +404,12 @@ export default function Menu(){
                                                                     {item.veg ? ' Veg' : ' Non Veg'}
                                                                 </span>
                                                                 <span>
-                                                                    &nbsp;<span className={styles.dot}></span>&nbsp; Serves: {item.serves}
+                                                                    &nbsp;<span className={styles.dot}></span>&nbsp; Serves {item.serves}
                                                                 </span>
                                                             </div>
                                                             <h3 style={{ marginTop: '8px' }} className={styles.itemPrice}>
                                                                 <span>&#8377;</span>
-                                                                {item.price}
+                                                                {item.price} <span className={styles.itemDescription}>({item.quantity? item.quantity: item.weight})</span>
                                                             </h3>
                                                             <p className={styles.itemDescription}>{item.description}</p>
                                                         </Row>

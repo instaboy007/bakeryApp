@@ -53,7 +53,7 @@
   border: 2px var(--choco-color-dark) !important;
 }
 
-.customButtonSecondary :hover{
+.customButtonSecondary:hover{
   background-color: var(--choco-color-dark) !important;
   color: var(--pastel-shade) !important;
   font-weight: 600 !important;
