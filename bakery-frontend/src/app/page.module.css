@@ -37,6 +37,7 @@
   background-color: var(--pastel-shade-2) !important;
   color: var(--choco-color-dark) !important;
   font-weight: 600 !important;
+  border: 2px var(--choco-color-dark) !important;
 }
 
 .horizontalLine{
@@ -81,4 +82,54 @@
 .seasonDishDescription{
   color: var(--choco-color-medium);
   font-size: 0.9rem;
+}
+
+/* .aboutSection{
+  background-color: var(--pastel-shade-2);
+} */
+
+.aboutInteriorImage{
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-image: url('/home/bakeryInterior.png');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden; /* Ensure the gradient covers the entire image */
+}
+
+.aboutBakeryCard{
+  background-color: var(--pastel-shade) !important;
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.aboutBakeryDescription{
+  color: var(--choco-color-dark);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.aboutOwnerImage{
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  background-image: url('/home/owner.png');
+  background-position: top;
+  background-size: cover;
+  overflow: hidden; /* Ensure the gradient covers the entire image */
+}
+
+.footer{
+  background-color: var(--choco-color-dark);
+  color: var(--pastel-shade) !important;
+}
+
+.socialIcons a{
+  font-size: 1.5rem;
+  color: var(--pastel-shade) !important;
 }

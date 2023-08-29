@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import {Container, Row, Col, Button,  Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import styles from '../page.module.css';
+import Image from 'next/image';
 
 export default function HomePage(){
     return (
@@ -143,101 +144,149 @@ export default function HomePage(){
                         </Row>
                     </Col>
                 </Row>
-                <Row style={{paddingTop: '24px', paddingBottom: '24px', justifyContent: 'center'}}>
-                    <Col xs='auto' sm='auto' md='auto' lg='auto' >
-                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important' }}>
-                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
-                                <img
-                                    alt="Card"
-                                    src="home/chocolateFudgeCake.png"
-                                />
-                                <CardBody>
-                                    <CardTitle className={styles.seasonDishName} tag="h5">
-                                    Chocolate Fudge Cake
-                                    </CardTitle>
-                                    <CardText className={styles.seasonDishDescription}>
-                                    Rich layers, velvety fudge, pure bliss.
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-                        </div>
-                    </Col>
-                    <Col xs='auto' sm='auto' md='auto' lg='auto'>
-                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
-                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
-                                <img
-                                    alt="Card"
-                                    src="home/croissantDelight.png"
-                                />
-                                <CardBody>
-                                    <CardTitle className={styles.seasonDishName} tag="h5">
-                                    Croissant Delight
-                                    </CardTitle>
-                                    <CardText className={styles.seasonDishDescription}>
-                                    Flaky perfection, buttery delight.
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-                        </div>
-                    </Col>
-                    <Col xs='auto' sm='auto' md='auto' lg='auto' >
-                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
-                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
-                                <img
-                                    alt="Card"
-                                    src="home/berryBlissCupcake.png"
-                                />
-                                <CardBody>
-                                    <CardTitle className={styles.seasonDishName} tag="h5">
-                                    Berry Bliss Cupcake
-                                    </CardTitle>
-                                    <CardText className={styles.seasonDishDescription}>
-                                    Bursting berries, heavenly sweetness.
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-                        </div>
-                    </Col>
-                    <Col xs='auto' sm='auto' md='auto' lg='auto'>
-                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
-                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
-                                <img
-                                    alt="Card"
-                                    src="home/artisanBaguette.png"
-                                />
-                                <CardBody>
-                                    <CardTitle className={styles.seasonDishName} tag="h5">
-                                    Artisan Baguette
-                                    </CardTitle>
-                                    <CardText className={styles.seasonDishDescription}>
-                                    Golden crust, soft interior, perfection.
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-                        </div>
-                    </Col>
-                    <Col xs='auto' sm='auto' md='auto' lg='auto'>
-                        <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
-                            <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
-                                <img
-                                    alt="Card"
-                                    src="home/lemonZestMacaron.png"
-                                />
-                                <CardBody>
-                                    <CardTitle className={styles.seasonDishName} tag="h5">
-                                    Lemon Zest Macaron
-                                    </CardTitle>
-                                    <CardText className={styles.seasonDishDescription}>
-                                    Zesty elegance, Parisian delight.
-                                    </CardText>
-                                </CardBody>
-                            </Card>
-                        </div>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px'}}>
+                    <Col>
+                        <Row style={{paddingTop: '24px', paddingBottom: '24px', justifyContent: 'center'}}>
+                            <Col xs='auto' sm='auto' md='auto' lg='auto' >
+                                <div style={{display: 'flex', justifyContent: 'center', height: '100% !important' }}>
+                                    <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
+                                        <img
+                                            alt="Card"
+                                            src="home/chocolateFudgeCake.png"
+                                        />
+                                        <CardBody>
+                                            <CardTitle className={styles.seasonDishName} tag="h5">
+                                            Chocolate Fudge Cake
+                                            </CardTitle>
+                                            <CardText className={styles.seasonDishDescription}>
+                                            Rich layers, velvety fudge, pure bliss.
+                                            </CardText>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            </Col>
+                            <Col xs='auto' sm='auto' md='auto' lg='auto'>
+                                <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
+                                    <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
+                                        <img
+                                            alt="Card"
+                                            src="home/croissantDelight.png"
+                                        />
+                                        <CardBody>
+                                            <CardTitle className={styles.seasonDishName} tag="h5">
+                                            Croissant Delight
+                                            </CardTitle>
+                                            <CardText className={styles.seasonDishDescription}>
+                                            Flaky perfection, buttery delight.
+                                            </CardText>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            </Col>
+                            <Col xs='auto' sm='auto' md='auto' lg='auto' >
+                                <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
+                                    <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
+                                        <img
+                                            alt="Card"
+                                            src="home/berryBlissCupcake.png"
+                                        />
+                                        <CardBody>
+                                            <CardTitle className={styles.seasonDishName} tag="h5">
+                                            Berry Bliss Cupcake
+                                            </CardTitle>
+                                            <CardText className={styles.seasonDishDescription}>
+                                            Bursting berries, heavenly sweetness.
+                                            </CardText>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            </Col>
+                            <Col xs='auto' sm='auto' md='auto' lg='auto'>
+                                <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
+                                    <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
+                                        <img
+                                            alt="Card"
+                                            src="home/artisanBaguette.png"
+                                        />
+                                        <CardBody>
+                                            <CardTitle className={styles.seasonDishName} tag="h5">
+                                            Artisan Baguette
+                                            </CardTitle>
+                                            <CardText className={styles.seasonDishDescription}>
+                                            Golden crust, soft interior, perfection.
+                                            </CardText>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            </Col>
+                            <Col xs='auto' sm='auto' md='auto' lg='auto'>
+                                <div style={{display: 'flex', justifyContent: 'center', height: '100% !important'}}>
+                                    <Card className={styles.customSeasonCard} style={{width: '12rem',marginTop: '5%'}}>
+                                        <img
+                                            alt="Card"
+                                            src="home/lemonZestMacaron.png"
+                                        />
+                                        <CardBody>
+                                            <CardTitle className={styles.seasonDishName} tag="h5">
+                                            Lemon Zest Macaron
+                                            </CardTitle>
+                                            <CardText className={styles.seasonDishDescription}>
+                                            Zesty elegance, Parisian delight.
+                                            </CardText>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row style={{paddingTop: '24px', justifyContent: 'center'}}>
+                            <Col xs="auto">
+                                <Button className={styles.customButtonPrimary}>Order Now</Button>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
-                <Row style={{paddingTop: '24px', paddingBottom: '24px', justifyContent: 'center'}}>
+                <Row style={{paddingTop: '24px', paddingBottom: '24px'}}>
                     <Col>
-                        <h1 style={{textAlign: 'center'}}>About</h1>
+                        <Row style={{justifyContent: 'center', paddingBottom: '24px'}}>
+                            <Col>
+                                <h1 className={styles.mainText} style={{textAlign: 'center'}}>About Us</h1>
+                            </Col>
+                        </Row>
+                        <Row className={styles.aboutSection}>
+                            <Col rounded className={styles.aboutInteriorImage} sm='12' md='6'>
+                            </Col>
+                            <Col>
+                                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%'}}>
+                                    <Card className={styles.aboutBakeryCard} style={{width: '100%', height: '95%'}}>
+                                        <CardBody>
+                                            <CardText className={styles.aboutBakeryDescription}>
+                                                Welcome to RK Bakes, where passion for baking meets South Indian flavors and traditions. Our journey began with a simple vision – to create irresistible baked goods that bring joy to every bite.
+                                                Our story traces back to the vibrant kitchens of South India, where our founder, Veera Raghavan V, discovered a deep-rooted love for baking. What started as a humble experiment soon turned into a culinary adventure, blending the art of baking with the rich tastes of South Indian cuisine.
+                                                At RK Bakes, we're not just bakers; we're storytellers. Each recipe carries a piece of our heritage, transforming ingredients into cherished memories. From fragrant cardamom-infused pastries to the softest buttery dosa cakes, every creation is a tribute to our roots.
+                                                Our values are as important to us as the ingredients we use. We're committed to quality, ensuring that every product that leaves our ovens is made with the finest, freshest ingredients. Our passion drives us to experiment, innovate, and create the perfect balance between tradition and modernity.
+                                            </CardText>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row className={styles.aboutSection}>
+                            <Col xs={{size: 12, order: 2}} sm={{size: 12, order: 2}} md={{size: 6, order: 1}}>
+                                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%'}}>
+                                    <Card className={styles.aboutBakeryCard} style={{width: '100%', height: '95%'}}>
+                                        <CardBody>
+                                            <CardText className={styles.aboutBakeryDescription}>
+                                                Meet Veera Rahgavan V, the heart and soul behind RK Bakes. With a lifetime of culinary wisdom and a dash of creativity, Veera brings South Indian flavors to life in every bite. From classic recipes to innovative twists, Veera infuses our bakery with a warmth and authenticity that can only come from a true passion for the craft.
+                                                Join us on this delightful journey, where taste is a tradition and every moment is a celebration of flavor. At RK Bakes, baking isn't just a skill – it's an art, a story, and a piece of our South Indian soul.
+                                                Discover the magic of RK Bakes – where every bake tells a story.
+                                            </CardText>
+                                        </CardBody>
+                                    </Card>
+                                </div>
+                            </Col>
+                            <Col rounded className={styles.aboutOwnerImage} xs={{size: 12, order: 1}} sm={{size: 12, order: 1}} md={{size: 6, order: 2}}>
+                            </Col>
+                        </Row>
                     </Col>
                 </Row>
             </Container>

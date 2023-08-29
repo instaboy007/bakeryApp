@@ -33,7 +33,7 @@ export default function NavBar(args) {
                     </NavItem>
                     <NavItem className="mx-3">
                         <NavLink href="">
-                            Order
+                            Menu
                         </NavLink>
                     </NavItem>
                     <NavItem className="mx-3">
