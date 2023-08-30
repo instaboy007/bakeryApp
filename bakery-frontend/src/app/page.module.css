@@ -172,9 +172,22 @@
   text-align: center;
 }
 
+.itemsSection::-webkit-scrollbar {
+  display: none;
+}
+
+.itemsSection{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .categoryName{
   font-size: 1rem;
   color: var(--choco-color-dark);
+}
+
+.categoryName:hover{
+  cursor: pointer;
 }
 
 .vegIcon {

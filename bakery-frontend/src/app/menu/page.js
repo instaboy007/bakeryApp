@@ -25,7 +25,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/Naan.jpg'
         },
         {
             name: 'Roti',
@@ -34,7 +34,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/Roti.jpg'
         },
         {
             name: 'Paratha',
@@ -43,7 +43,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/Paratha.jpg'
         },
         {
             name: 'Pav',
@@ -52,7 +52,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/Pav.jpg'
         },
         {
             name: 'Bhatura',
@@ -61,7 +61,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/Bhatura.jpg'
         }
     ],
     Pastries: [
@@ -72,7 +72,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/pineapplePastry.jpg'
         },
         {
             name: 'Chocolate Eclair',
@@ -81,7 +81,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/chocolateEclairs.jpg'
         },
         {
             name: 'Black Forest Pastry',
@@ -90,7 +90,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/blackForestPastry.jpg'
         },
         {
             name: 'Mango Mousse Pastry',
@@ -99,7 +99,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/mangoMoussePastry.jpg'
         },
         {
             name: 'Strawberry Shortcake',
@@ -108,7 +108,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/strawberryShortCake.jpg'
         }
     ],
     Cakes: [
@@ -119,7 +119,7 @@ const itemsByCategory = {
             weight: '1 kg',
             veg: true,
             serves: '8-10',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/blackForestCake.jpg'
         },
         {
             name: 'Pineapple Cake',
@@ -128,7 +128,7 @@ const itemsByCategory = {
             weight: '1 kg',
             veg: true,
             serves: '8-10',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/pineappleCake.jpeg'
         },
         {
             name: 'Red Velvet Cake',
@@ -137,7 +137,7 @@ const itemsByCategory = {
             weight: '1 kg',
             veg: true,
             serves: '8-10',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/redVelvetCake.jpg'
         },
         {
             name: 'Chocolate Truffle Cake',
@@ -146,7 +146,7 @@ const itemsByCategory = {
             weight: '1 kg',
             veg: true,
             serves: '8-10',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/chocolateTruffleCake.jpg'
         },
         {
             name: 'Mango Cream Cake',
@@ -155,7 +155,7 @@ const itemsByCategory = {
             weight: '1 kg',
             veg: true,
             serves: '8-10',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/mangoCreamCake.jpg'
         }
     ],
     Cupcakes: [
@@ -166,7 +166,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/chocolateCupcake.jpg'
         },
         {
             name: 'Vanilla Cupcake',
@@ -175,7 +175,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/vanillaCupcake.jpg'
         },
         {
             name: 'Red Velvet Cupcake',
@@ -184,7 +184,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/redVelvetCupcake.jpg'
         },
         {
             name: 'Strawberry Cupcake',
@@ -193,7 +193,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/strawberryCupcake.jpg'
         },
         {
             name: 'Lemon Cupcake',
@@ -202,7 +202,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/lemonCupcake.jpg'
         }
     ],
     Cookies: [
@@ -213,7 +213,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/chocolateChipCookie.jpg'
         },
         {
             name: 'Butter Shortbread Cookie',
@@ -222,7 +222,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/butterShortbreadCookie.jpg'
         },
         {
             name: 'Oatmeal Raisin Cookie',
@@ -231,7 +231,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/oatmealRaisinCookie.jpg'
         },
         {
             name: 'Coconut Macaroon',
@@ -240,7 +240,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/coconutMacaroon.jpg'
         },
         {
             name: 'Almond Biscotti',
@@ -249,7 +249,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/almondBiscotti.jpg'
         }
     ],
     Chocolates: [
@@ -260,7 +260,7 @@ const itemsByCategory = {
             weight: '100g',
             veg: true,
             serves: 'Varies',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/darkChocolate.jpg'
         },
         {
             name: 'Milk Chocolate',
@@ -269,7 +269,7 @@ const itemsByCategory = {
             weight: '100g',
             veg: true,
             serves: 'Varies',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/milkChocolate.jpg'
         },
         {
             name: 'White Chocolate',
@@ -278,7 +278,7 @@ const itemsByCategory = {
             weight: '100g',
             veg: true,
             serves: 'Varies',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/whiteChocolate.jpg'
         },
         {
             name: 'Hazelnut Praline',
@@ -287,7 +287,7 @@ const itemsByCategory = {
             weight: '100g',
             veg: true,
             serves: 'Varies',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/hazelnutPraline.jpg'
         },
         {
             name: 'Fruit & Nut Chocolate',
@@ -296,7 +296,7 @@ const itemsByCategory = {
             weight: '100g',
             veg: true,
             serves: 'Varies',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/fruitNutChocolate.jpg'
         }
     ],
     Doughnuts: [
@@ -307,7 +307,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/glazedDoughnut.jpg'
         },
         {
             name: 'Chocolate Doughnut',
@@ -316,7 +316,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/chocolateDoughnut.jpg'
         },
         {
             name: 'Jelly-Filled Doughnut',
@@ -325,7 +325,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/jellyFilledDoughnut.jpg'
         },
         {
             name: 'Boston Cream Doughnut',
@@ -334,7 +334,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/bostonCreamDoughnut.jpg'
         },
         {
             name: 'Cinnamon Sugar Doughnut',
@@ -343,7 +343,7 @@ const itemsByCategory = {
             quantity: 'Each',
             veg: true,
             serves: '1 piece',
-            image: 'home/chocolateFudgeCake.png'
+            image: 'home/cinnamonSugarDoughnut.jpg'
         }
     ]
 };
@@ -382,7 +382,7 @@ export default function Menu(){
                                 ))}
                             </ListGroup>
                         </Col>
-                        <Col xs='8' sm='8' md="9">
+                        <Col xs='8' sm='8' md="9" className={styles.itemsSection} style={{height: '100vh', overflowY: 'scroll'}}>
                             <Row className={styles.itemList} style={{justifyContent: 'center'}}>
                                 <Col>
                                     <Row>
@@ -397,7 +397,7 @@ export default function Menu(){
                                                         <CardTitle className={styles.seasonDishName} tag="h5">
                                                             {item.name}
                                                         </CardTitle>
-                                                        <Row className={styles.seasonDishDescription}>
+                                                        <Row className={styles.seasonDishDescription} style={{height: '135px'}}>
                                                             <div>
                                                                 <span>
                                                                     {item.veg ? <FaLeaf className={styles.vegIcon} /> : <FaDrumstickBite className={styles.nonVegIcon} />}

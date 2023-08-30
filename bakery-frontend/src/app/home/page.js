@@ -3,8 +3,16 @@ import React, { useState } from 'react';
 import {Container, Row, Col, Button,  Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import styles from '../page.module.css'
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function Home(){
+
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push('/menu');
+    };
+
     return (
         <>
             <div className={styles.heroContainer}>
@@ -240,7 +248,7 @@ export default function Home(){
                         </Row>
                         <Row style={{paddingTop: '24px', justifyContent: 'center'}}>
                             <Col xs="auto">
-                                <Button className={styles.customButtonPrimary}>Order Now</Button>
+                                <Button onClick={handleClick} className={styles.customButtonPrimary}>View Menu</Button>
                             </Col>
                         </Row>
                     </Col>
