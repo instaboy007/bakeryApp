@@ -1,14 +1,38 @@
+/* styles.css */
+@font-face {
+    font-family: 'Pathway Extreme';
+    src: 
+        url('../fonts/PathwayExtreme-VariableFont_opsz\,wdth\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Apply the font to specific elements */
+  body {
+    font-family: 'Pathway Extreme', sans-serif !important;
+  }
+
 /* Global Color Configurations */
 :root {
     --pure-white: #ffffff; /* White color for text */
     --pastel-shade: #F0E8D0;
     --pastel-shade-1: #eee1ba;
     --pastel-shade-2: #f0d7a7;
+    --pastel-shade-3: #e9b554;
+    --rose-shade-1: #FFE9E0;
+    --rose-shade-2: #FFC2B1;
+    --rose-shade-3: #FD8B7C;
+    --rose-shade-4: #C0564B;
+    --peach-shade-1: #FF8B5C;
+    --brown-shade-1: #AD735C;
     --choco-color-mild: #c37960;
     --choco-color-medium: #9c634f;
     --choco-color-dark: #894e3f;
+    --choco-color-darkest: #55433B;
 
-    font-family: Gelion, Helvetica, "Helvetica Neue", Poppins, Roboto, Oxygen, Ubuntu;
+    font-family: 'Pathway Extreme', sans-serif !important;
+
+    /* font-family: Gelion, Helvetica, "Helvetica Neue", Poppins, Roboto, Oxygen, Ubuntu; */
 }
 
 body {

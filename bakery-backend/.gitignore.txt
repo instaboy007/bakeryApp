@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+dist/
+egg-info/
+*.egg
+
+# Visual Studio Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Django related
+db.sqlite3
+*.log
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.pyc
+*.pyo
+
+# Ignore static and media files
+/static/
+/media/
+
+# Ignore virtual environment
+venv/
+
+# Ignore secret keys
+*.secret_key
+
+# Ignore environment-specific settings
+*.env
+
+# Ignore coverage reports
+.coverage
+
+# Ignore pipenv files
+Pipfile
+Pipfile.lock

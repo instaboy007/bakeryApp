@@ -2,12 +2,32 @@
 
 .navBar{
   background-color: var(--pastel-shade-2);
+  padding: 12px 0px 12px 0px;
+  height: 10vh !important;
 }
 
 .navLink{
   text-decoration: none;
   color: var(--choco-color-dark) !important;
+  font-size: 1rem;
+  font-weight: 600;
 }
+
+.carIconContainer{
+  position: relative;
+}
+
+.cartBadge {
+  position: relative;
+  top: -10px; /* Adjust the vertical position as needed */
+  right: -10px; /* Adjust the horizontal position as needed */
+  background-color: var(--choco-color-dark); /* Background color of the badge */
+  color: var(--pastel-shade); /* Text color of the badge */
+  border-radius: 50%; /* Make it circular */
+  padding: 5px 10px; /* Adjust the padding for your badge */
+  font-size: 12px; /* Font size of the badge */
+}
+
 
 /* Home */
 
@@ -45,19 +65,30 @@
   border: 2px var(--choco-color-dark) !important;
 }
 
+
 .customButtonSecondary{
   background-color: var(--pure-white) !important;
-  border: 2px var(--choco-color-dark) !important;
+  border: 1px solid var(--choco-color-dark) !important;
   color: var(--choco-color-dark) !important;
   font-weight: 600 !important;
-  border: 2px var(--choco-color-dark) !important;
 }
 
 .customButtonSecondary:hover{
   background-color: var(--choco-color-dark) !important;
   color: var(--pastel-shade) !important;
+  border: 1px solid var(--pastel-shade) !important;
   font-weight: 600 !important;
-  border: 2px var(--choco-color-dark) !important;
+}
+
+.customButtonTertiary{
+  background-color: var(--choco-color-dark) !important;
+  color: var(--pastel-shade) !important;
+  font-weight: 600 !important;
+  border: 1px var(--choco-color-dark) !important;
+}
+
+.bodySection{
+  background-color: var(--rose-shade-1) !important;
 }
 
 
@@ -78,7 +109,8 @@
 }
 
 .subText, .mainText, .horizontalLine{
-  color: var(--choco-color-dark);
+  font-weight: 600;
+  color: var(--choco-color-darkest);
 }
 
 .customKitchenCard, .customSeasonCard{
@@ -94,29 +126,44 @@
 }
 
 .seasonDishName{
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--choco-color-dark) !important;
   font-weight: 700;
+  text-align: left;
 
 }
 
 .seasonDishDescription{
   color: var(--choco-color-medium);
   font-size: 0.9rem;
+  text-align: left;
 }
 
-/* .aboutSection{
-  background-color: var(--pastel-shade-2);
-} */
+.seasonDishImage{
+  border-radius: 8px;
+}
+
+.aboutSection{
+  background-color: var(--rose-shade-2);
+  padding: 48px;
+}
+
+.aboutOwner{
+  background-color: var(--peach-shade-1);
+  padding: 48px;
+}
 
 .aboutInteriorImage{
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
-  min-height: 300px;
-  background-image: url('/home/bakeryInterior.png');
+  min-height: 240px;
+  background-image: url('https://bakerycapstone.blob.core.windows.net/images/bakeryInterior.png');
   background-position: center center;
   background-size: cover;
-  overflow: hidden; /* Ensure the gradient covers the entire image */
+  overflow: hidden;
+  border-radius: 2%; /* Ensure the gradient covers the entire image */
 }
 
 .aboutBakeryCard{
@@ -126,25 +173,31 @@
 }
 
 .aboutBakeryDescription{
-  color: var(--choco-color-dark);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.1rem;
+  color: var(--choco-color-darkest);
+  font-size: 1rem;
   font-weight: 600;
   text-align: justify;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-style: italic;
+  padding: 16px;
 }
 
-.aboutOwnerImage{
+.aboutOwnerImage {
   position: relative;
-  height: auto;
-  min-height: 300px;
-  background-image: url('/home/owner.png');
-  background-position: top;
+  margin: auto;
+  width: 320px; /* Set the initial width */
+  height: 320px; /* Set the initial height */
+  max-width: 100%; /* Ensure it doesn't exceed the container's width */
+  border-radius: 50%; /* Make the image a rounded circle */
+  background-image: url('https://bakerycapstone.blob.core.windows.net/images/owner.png');
+  background-position: center;
   background-size: cover;
-  overflow: hidden; /* Ensure the gradient covers the entire image */
 }
+
 
 .footer{
-  background-color: var(--choco-color-dark);
+  background-color: var(--rose-shade-4);
   color: var(--pastel-shade) !important;
 }
 
@@ -172,17 +225,59 @@
   text-align: center;
 }
 
-.itemsSection::-webkit-scrollbar {
-  display: none;
+/* Track */
+.itemsSection ::-webkit-scrollbar {
+  width: 12px;
+  background: var(--pastel-shade);
 }
 
-.itemsSection{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+/* Handle */
+.itemsSection ::-webkit-scrollbar-thumb {
+  background: var(--pastel-shade-2); /* Scrollbar handle color */
+  border-radius: 6px; /* Make the handle round */
+  height: 8px !important; 
+}
+
+/* Handle on hover */
+.itemsSection ::-webkit-scrollbar-thumb:hover {
+  background: var(--pastel-shade-3); /* Hover color for the handle */
+}
+
+/* .itemsSection::-webkit-scrollbar {
+  display: none;
+} */
+
+/* .itemsSection{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}*/
+
+.categoryItem {
+  border: 1px solid var(--rose-shade-2);
+  border-radius: 15px !important;
+  padding: 10px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categoryItem::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+
+/* Add styles for the selected category */
+.active{
+  background-color: var(--pastel-shade);
+  color: #fff;
 }
 
 .categoryName{
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--choco-color-dark);
 }
 
@@ -218,4 +313,153 @@
 .itemDescription{
   font-size: 0.8rem;
 
+}
+
+/* Cart Footer */
+.stickyCartFooter {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--rose-shade-3);
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartSummary {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cart */
+.countIncrementer {
+  display: flex;
+  align-items: center;
+  /* background-color: var(--pure-white); */
+  padding: 8px;
+  border-radius: 8px;
+  /* border: 1px solid var(--choco-color-dark); */
+}
+
+.countButton {
+  width: 30px;
+  height: 30px;
+  background-color: var(--pure-white);
+  /* border: none; */
+  border: 1px solid var(--choco-color-dark);
+  color: var(--choco-color-dark);
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.countButton:hover, .countButton:active{
+  background-color: var(--choco-color-dark);
+  border: var(--pure-white);
+  color: var(--pure-white);
+}
+
+
+.count {
+  font-size: 1rem;
+  margin: 0 10px;
+  color: var(--choco-color-dark);
+  font-weight: 700;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.billPrice{
+  color: var(--choco-color-darkest);
+  text-align: right;
+}
+
+/* Cart */
+
+.emptyCartIcon{
+  height: 25rem;
+  width: 25rem;
+  color: var(--pastel-shade);
+}
+
+/* Auth Panel */
+
+.authPanel{
+  width: 40vw;
+  height: 100%;
+  background-color: var(--rose-shade-2);
+  position: fixed;
+  left: auto;
+  right: 0;
+  transition: transform .3s ease-out;
+  z-index: 10001;
+}
+
+.blurOverlay {
+  filter: blur(5px); /* Adjust the blur amount as needed */
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.closeButton, .closeButton::after, .closeButton:hover{
+  background-color: transparent;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.closeButton > span{
+  font-size: 3rem;
+  color: var(--choco-color-darkest);
+}
+
+.authPanelHeading{
+  font-size: 1.6rem;
+  color: var(--choco-color-dark);
+  font-weight: 600;
+}
+
+.authPanelSubHeading{
+  font-size: 1rem;
+  color: var(--choco-color-medium);
+}
+
+.authPanelLink{
+  color: var(--rose-shade-4);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Payment */
+
+.paymentCardTitle{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.paymentCardSelected {
+  border: 2px solid var(--pastel-shade-2); /* Change the border style when selected */
+  background-color: var(--pastel-shade); /* Change the background color when selected */
+  box-shadow: 0 0 5px var(--pastel-shade-3); /* Add a shadow effect when selected */
+  /* Add any other styles you want for selected cards */
+}
+
+.emptyCartText{
+  color: var(--choco-color-dark);
+  font-size: 1.5rem;
+}
+
+.paymentContainer{
+  background-color: var(--pastel-shade);
 }
